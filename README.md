@@ -24,6 +24,7 @@ test:
   host: db
   port: 5432
 ```
-3. ```bash
+3. Launch the containers:
+```bash
 docker-compose up
 ```
