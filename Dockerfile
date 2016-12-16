@@ -14,6 +14,7 @@ RUN apt-get -q update \
        wget \
        build-essential \
        libpq-dev \
+       libreadline-dev \
   && apt-get -q clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN wget -O - https://github.com/sstephenson/rbenv/archive/master.tar.gz \
