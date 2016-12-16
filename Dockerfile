@@ -1,4 +1,4 @@
-FROM jetbrains/teamcity-minimal-agent:10.0.3
+FROM jetbrains/teamcity-agent:10.0.3
 MAINTAINER Julien Enocq <julien@enocq.fr>
 
 ENV USER buildagent
