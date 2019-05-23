@@ -17,10 +17,10 @@ RUN apt-get -q update \
        libreadline-dev \
   && apt-get -q clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-RUN wget -O - https://github.com/sstephenson/rbenv/archive/master.tar.gz \
+RUN wget -O - https://github.com/rbenv/rbenv/archive/master.tar.gz \
   | tar zxf - \
   && mv rbenv-master $HOME/.rbenv
-RUN wget -O - https://github.com/sstephenson/ruby-build/archive/master.tar.gz \
+RUN wget -O - https://github.com/rbenv/ruby-build/archive/master.tar.gz \
   | tar zxf - \
   && mkdir -p $HOME/.rbenv/plugins \
   && mv ruby-build-master $HOME/.rbenv/plugins/ruby-build
