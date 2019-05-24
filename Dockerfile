@@ -9,7 +9,7 @@ ENV RBENV ${HOME}/.rbenv
 RUN apt-get -q update \
   && DEBIAN_FRONTEND=noninteractive apt-get -q -y --no-install-recommends install \
        autoconf bison build-essential libssl1.0-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev \
-       libicu-dev \
+       libicu-dev postgresql-client libpq-dev imagemagick libmagickcore-dev libmagickwand-dev \
   && apt-get -q clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN git clone https://github.com/rbenv/rbenv.git $RBENV
