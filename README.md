@@ -1,6 +1,9 @@
-# docker-teamcity-agent-rbenv
+# docker-teamcity-agent-rbenv
 
-Teamcity agent client based on [jetbrains/teamcity-agent](https://hub.docker.com/r/jetbrains/teamcity-agent/), with rbenv and the build-essential package installed.
+TeamCity agent client based on [jetbrains/teamcity-agent](https://hub.docker.com/r/jetbrains/teamcity-agent/), with rbenv and the build-essential package installed.
+
+This is the agent we use to build and test all the Ruby code TeamCity looks after.
+If you want to add packages to it, tweak the list following the `DEBIAN_FRONTENT` bit in the Dockerfile.
 
 # Setup
 
